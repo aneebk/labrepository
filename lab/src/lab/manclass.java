@@ -10,12 +10,13 @@ ShoppingCart cart = new ShoppingCart();
 		
 		cart.addItem(item1);
 		cart.addItem(item2);
+		System.out.println(cart.calculateTotal());
 		
 		//pay by paypal
 		cart.pay(new PaypalStrategy("myemail@example.com", "mypwd"));
 		
 		//pay by credit card
-		cart.pay(new CreditCardStrategy("Pankaj Kumar", "1234567890123456", "786", "12/15"));
+		cart.pay(new CreditCardStrategy("Aneeb khalid", "1234567890123456", "786", "12/18"));
 	}
 
 	}
